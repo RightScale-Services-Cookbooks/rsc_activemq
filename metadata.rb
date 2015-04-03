@@ -43,6 +43,13 @@ attribute 'activemq/wrapper/truststore_password',
   :display     => 'activemq/wrapper/truststore_password',
   :required    => 'required'
 
+  attribute 'activemq/webconsole_password',
+    :description => 'Web console password to use for admin user',
+    :recipes     => ['activemq::default'],
+    :type        => 'string',
+    :display     => 'activemq/webconsole_password',
+    :required    => 'required'
+
 attribute 'java/version',
   :display_name => 'JAVA JDK version to install',
   :description => 'Indicate the version of JAVA JDK you want to install, Example: 7',
