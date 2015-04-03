@@ -45,7 +45,7 @@ attribute 'activemq/wrapper/truststore_password',
 
   attribute 'activemq/webconsole_password',
     :description => 'Web console password to use for admin user',
-    :recipes     => ['activemq::default'],
+    :recipes     => ['rsc_activemq::default'],
     :type        => 'string',
     :display     => 'activemq/webconsole_password',
     :required    => 'required'
