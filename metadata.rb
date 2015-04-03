@@ -50,7 +50,7 @@ attribute 'java/version',
   :default =>'7',
   :required => 'optional'
 
-attribute 'java/flavor',
+attribute 'java/install_flavor',
   :display_name => 'JVM Flavor to install ',
   :description => "Support: openjdk, Default: openjdk",
   :recipes     => ['rsc_activemq::default'],
