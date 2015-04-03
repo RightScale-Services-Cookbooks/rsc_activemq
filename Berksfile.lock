@@ -1,22 +1,18 @@
-{
-  "sources": {
-    "rsc_activemq": {
-      "path": "."
-    },
-    "apt": {
-      "locked_version": "2.6.0"
-    },
-    "yum-epel": {
-      "locked_version": "0.4.0"
-    },
-    "activemq": {
-      "locked_version": "1.3.2"
-    },
-    "java": {
-      "locked_version": "1.29.0"
-    },
-    "yum": {
-      "locked_version": "3.3.2"
-    }
-  }
-}
+DEPENDENCIES
+  apt (~> 2.6.0)
+  rsc_activemq
+    path: .
+    metadata: true
+  yum-epel (~> 0.4.0)
+
+GRAPH
+  activemq (1.3.2)
+    java (~> 1.13)
+  apt (2.6.1)
+  java (1.31.0)
+  rsc_activemq (1.0.0)
+    activemq (>= 0.0.0)
+    java (>= 0.0.0)
+  yum (3.5.3)
+  yum-epel (0.4.0)
+    yum (~> 3.0)
