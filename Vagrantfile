@@ -5,13 +5,13 @@ Vagrant.configure("2") do |config|
 
   config.vm.hostname = "rsc-activemq-berkshelf"
 
-  # Every Vagrant virtual environment requires a box to build off of.   
+  # Every Vagrant virtual environment requires a box to build off of.
   #config.vm.box = "opscode-ubuntu-12.04"
   config.vm.box = "opscode-ubuntu-14.04"
   #config.vm.box ="opscode-centos-6.6"
   #config.vm.box ="opscode-centos-7.0"
   #config.vm.box  ="opscode-debian-7.7"
-  
+
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   #config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-12.04_chef-provisionerless.boxx"
@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   #config.vm.box_url ="http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
   #config.vm.box_url="http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-7.0_chef-provisionerless.box"
   #config.vm.box_url="http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_debian-7.7_chef-provisionerless.box"
-  
+
   # Assign this VM to a host-only network IP, allowing you to access it
   # via the IP. Host-only networks can talk to the host machine as well as
   # any other machines on the same network, but cannot be accessed (through this
@@ -58,7 +58,7 @@ Vagrant.configure("2") do |config|
   # information on available options.
 
   # The path to the Berksfile to use with Vagrant Berkshelf
-  # config.berkshelf.berksfile_path = "./Berksfile"
+  config.berkshelf.berksfile_path = "./Berksfile"
 
   # Enabling the Berkshelf plugin. To enable this globally, add this configuration
   # option to your ~/.vagrant.d/Vagrantfile file
