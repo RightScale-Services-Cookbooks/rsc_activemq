@@ -46,11 +46,13 @@ attribute 'activemq/wrapper/truststore_password',
 attribute 'java/version',
   :display_name => 'JAVA JDK version to install',
   :description => 'Indicate the version of JAVA JDK you want to install, Example: 7',
+  :recipes     => ['rsc_activemq::default'],
   :default =>'7',
   :required => 'optional'
 
 attribute 'java/flavor',
   :display_name => 'JVM Flavor to install ',
   :description => "Support: openjdk, Default: openjdk",
+  :recipes     => ['rsc_activemq::default'],
   :choice=> ['openjdk','oracle'],
   :required => 'required'
