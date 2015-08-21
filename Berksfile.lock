@@ -1,0 +1,15 @@
+{
+  "sources": {
+    "rsc_activemq": {
+      "path": "."
+    },
+    "activemq": {
+      "locked_version": "1.3.3",
+      "git": "git://github.com/RightScale-Services-Cookbooks/activemq",
+      "ref": "792b7c18fea26c26e3a3dd96cc5c73ad79d382a0"
+    },
+    "java": {
+      "locked_version": "1.31.0"
+    }
+  }
+}
