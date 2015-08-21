@@ -1,0 +1,28 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+  - name: centos-6.5
+#    run_list:
+#      - recipe[fake::install_rightscale_epel]
+
+suites:
+  - name: default
+    run_list:
+      - recipe[rsc_activemq::default]
+    attributes:
+      activemq:
+        mirror: "http://www.trieuvan.com/apache/activemq/5.11.1/apache-activemq-5.11.1-bin.tar.gz"
+        version: "5.11.1"
+        wrapper:
+          keystore_password: "rightscale"
+          truststore_password: "rightscale"
+      webconsole_password: "rightscale"
+      java:
+        jdk_version: "7"
+        install_flavor: "oracle"
