@@ -5,5 +5,11 @@
 bin/*
 .bundle/*
 
+# Kitchen
 .kitchen/
 .kitchen.local.yml
+
+# rbenv
+.gems
+.rbenv-gemsets
+.ruby-version
