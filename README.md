@@ -1,14 +1,9 @@
 rsc_activemq Cookbook [![Build Status](https://travis-ci.org/RightScale-Services-Cookbooks/rsc_activemq.svg?branch=master)](https://travis-ci.org/RightScale-Services-Cookbooks/rsc_activemq)
+
 ================
 Installs ActiveMQ and sets it up as a service.
 
 
-Requirements
-------------
-
-This cookbook has been verified to work with:
-* Ubuntu 14.04
-* CentOS 6.5
 
 Recipes
 -------
