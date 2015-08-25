@@ -22,7 +22,7 @@ suites:
         wrapper:
           keystore_password: "rightscale"
           truststore_password: "rightscale"
-      webconsole_password: "rightscale"
+        webconsole_password: "rightscale"
       java:
         jdk_version: "7"
         install_flavor: "oracle"
